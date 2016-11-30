@@ -1,9 +1,13 @@
 {
-  "name": "xml2js",
+  "name": "react-native-xml2js",
   "description": "Simple XML to JavaScript object converter.",
   "keywords": [
+    "react-native",
+    "ios",
+    "android",
     "xml",
-    "json"
+    "json",
+    "connectedlab"
   ],
   "homepage": "https://github.com/connected-lab/react-native-xml2js",
   "version": "1.0.0",
@@ -52,8 +56,8 @@
     "Bogdan Chadkin <trysound@yandex.ru> (https://github.com/TrySound)",
     "David Wood <david.p.wood@gmail.com> (http://codesleuth.co.uk/)",
     "Nicolas Maquet (https://github.com/nmaquet)",
-    "Alexandre Leo Kaliazine <lkaliazine@connectedlab.com> (https://github.com/connected-lkaliazine)",
-    "Josh Allen <jallen@connectedlab.com> (https://github.com/connected-jallen)"
+    "Alexandre Leo Kaliazine <leo.kaliazine+react-native-xml2js@gmail.com> (https://github.com/connected-lkaliazine)",
+    "Josh Allen <josh.allen.it+react-native-xml2js@gmail.com> (https://github.com/connected-jallen)"
   ],
   "main": "./lib/xml2js",
   "files": [

@@ -1,4 +1,4 @@
-# react-native-xml2js
+# React Native XML to JSON Conversion
 
 This is a fork of [node-xml2js](https://github.com/Leonidas-from-XIV/node-xml2js) to support react-native.
 
