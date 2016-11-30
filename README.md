@@ -27,11 +27,8 @@ Note: If you're looking for a full DOM parser, you probably want
 Installation
 ============
 
-Simplest way to install `xml2js` is to use [npm](http://npmjs.org), just `npm
-install xml2js` which will download xml2js and all dependencies.
-
-xml2js is also available via [Bower](http://bower.io/), just `bower install
-xml2js` which will download xml2js and all dependencies.
+Simplest way to install `react-native-xml2js` is to use [npm](http://npmjs.org), just `npm
+install react-native-xml2js` which will download react-native-xml2js and all dependencies.
 
 Usage
 =====
@@ -46,7 +43,7 @@ You want to parse XML as simple and easy as possible? It's dangerous to go
 alone, take this:
 
 ```javascript
-var parseString = require('xml2js').parseString;
+var parseString = require('react-native-xml2js').parseString;
 var xml = "<root>Hello xml2js!</root>"
 parseString(xml, function (err, result) {
     console.dir(result);
@@ -79,7 +76,7 @@ wrapper, this was added in 0.1.11 just for you:
 
 ```javascript
 var fs = require('fs'),
-    xml2js = require('xml2js');
+    xml2js = require('react-native-xml2js');
 
 var parser = new xml2js.Parser();
 fs.readFile(__dirname + '/foo.xml', function(err, data) {
@@ -98,7 +95,7 @@ the clutter:
 
 ```coffeescript
 fs = require 'fs',
-xml2js = require 'xml2js'
+xml2js = require 'react-native-xml2js'
 
 parser = new xml2js.Parser()
 fs.readFile __dirname + '/foo.xml', (err, data) ->
@@ -156,7 +153,7 @@ Since 0.4.0, objects can be also be used to build XML:
 
 ```javascript
 var fs = require('fs'),
-    xml2js = require('xml2js');
+    xml2js = require('react-native-xml2js');
 
 var obj = {name: "Super", Surname: "Man", age: 23};
 
@@ -342,36 +339,6 @@ Possible options are:
 
 `renderOpts`, `xmldec`,`doctype` and `headless` pass through to
 [xmlbuilder-js](https://github.com/oozcitak/xmlbuilder-js).
-
-Updating to new version
-=======================
-
-Version 0.2 changed the default parsing settings, but version 0.1.14 introduced
-the default settings for version 0.2, so these settings can be tried before the
-migration.
-
-```javascript
-var xml2js = require('xml2js');
-var parser = new xml2js.Parser(xml2js.defaults["0.2"]);
-```
-
-To get the 0.1 defaults in version 0.2 you can just use
-`xml2js.defaults["0.1"]` in the same place. This provides you with enough time
-to migrate to the saner way of parsing in `xml2js` 0.2. We try to make the
-migration as simple and gentle as possible, but some breakage cannot be
-avoided.
-
-So, what exactly did change and why? In 0.2 we changed some defaults to parse
-the XML in a more universal and sane way. So we disabled `normalize` and `trim`
-so `xml2js` does not cut out any text content. You can reenable this at will of
-course. A more important change is that we return the root tag in the resulting
-JavaScript structure via the `explicitRoot` setting, so you need to access the
-first element. This is useful for anybody who wants to know what the root node
-is and preserves more information. The last major change was to enable
-`explicitArray`, so everytime it is possible that one might embed more than one
-sub-tag into a tag, xml2js >= 0.2 returns an array even if the array just
-includes one element. This is useful when dealing with APIs that return
-variable amounts of subtags.
 
 Running tests, development
 ==========================
