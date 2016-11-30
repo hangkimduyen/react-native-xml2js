@@ -1,3 +1,12 @@
+# react-native-xml2js
+
+This is a fork of [node-xml2js](https://github.com/Leonidas-from-XIV/node-xml2js) to support react-native.
+
+Supported Platforms:
+
+- Android
+- iOS
+
 node-xml2js
 ===========
 
