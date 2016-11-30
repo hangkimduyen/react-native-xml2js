@@ -5,8 +5,8 @@
     "xml",
     "json"
   ],
-  "homepage": "https://github.com/Leonidas-from-XIV/node-xml2js",
-  "version": "0.4.17",
+  "homepage": "https://github.com/connected-lab/react-native-xml2js",
+  "version": "1.0.0",
   "author": "Marek Kubica <marek@xivilization.net> (https://xivilization.net)",
   "contributors": [
     "maqr <maqr.lollerskates@gmail.com> (https://github.com/maqr)",
@@ -51,7 +51,9 @@
     "Tim Johns <timjohns@yahoo.com> (https://github.com/TimJohns)",
     "Bogdan Chadkin <trysound@yandex.ru> (https://github.com/TrySound)",
     "David Wood <david.p.wood@gmail.com> (http://codesleuth.co.uk/)",
-    "Nicolas Maquet (https://github.com/nmaquet)"
+    "Nicolas Maquet (https://github.com/nmaquet)",
+    "Alexandre Leo Kaliazine <lkaliazine@connectedlab.com> (https://github.com/connected-lkaliazine)",
+    "Josh Allen <jallen@connectedlab.com> (https://github.com/connected-jallen)"
   ],
   "main": "./lib/xml2js",
   "files": [
@@ -67,19 +69,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Leonidas-from-XIV/node-xml2js.git"
+    "url": "https://github.com/connected-lab/react-native-xml2js.git"
   },
   "dependencies": {
-    "sax": ">=0.6.0",
-    "xmlbuilder": "^8.2.0"
+    "buffer": "5.0.x",
+    "sax": "0.6.x",
+    "stream": "0.0.x",
+    "timers": "0.1.x",
+    "xmlbuilder": "8.2.x"
   },
   "devDependencies": {
-    "coffee-script": ">=1.10.0",
-    "coveralls": "^2.11.2",
-    "diff": ">=1.0.8",
-    "docco": ">=0.6.2",
-    "nyc": ">=2.2.1",
-    "zap": ">=0.2.9"
+    "coffee-script": "1.10.x",
+    "coveralls": "2.11.x",
+    "diff": "1.0.x",
+    "docco": "0.6.x",
+    "nyc": "2.2.x",
+    "zap": "0.2.x"
   },
   "license": "MIT"
 }
