@@ -79,7 +79,7 @@
     "buffer": "5.0.x",
     "events": "1.1.x",
     "sax": "0.6.x",
-    "stream": "0.0.2",
+    "stream": "0.0.x",
     "timers": "0.1.x",
     "xmlbuilder": "8.2.x"
   },
